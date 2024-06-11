@@ -1,4 +1,5 @@
 import { Container, VStack, Heading, Text, Button, Box, Image, Flex } from "@chakra-ui/react";
+import { Link } from "react-router-dom";
 import { FaVideo, FaMicrophone, FaBolt, FaDollarSign } from "react-icons/fa";
 
 const Index = () => {
@@ -21,7 +22,7 @@ const Index = () => {
           <Box textAlign="center" maxW="sm" p={4}>
             <FaVideo size="3em" />
             <Heading as="h3" size="lg" mt={4} mb={2}>
-              Multiple Angles
+              <Link to="/multiple-angles">Multiple Angles</Link>
             </Heading>
             <Text>
               Stream live events from multiple camera angles seamlessly.
@@ -30,7 +31,7 @@ const Index = () => {
           <Box textAlign="center" maxW="sm" p={4}>
             <FaMicrophone size="3em" />
             <Heading as="h3" size="lg" mt={4} mb={2}>
-              Great Audio Quality
+              <Link to="/great-audio-quality">Great Audio Quality</Link>
             </Heading>
             <Text>
               Ensure your audience hears every detail with crystal clear audio.
@@ -39,7 +40,7 @@ const Index = () => {
           <Box textAlign="center" maxW="sm" p={4}>
             <FaBolt size="3em" />
             <Heading as="h3" size="lg" mt={4} mb={2}>
-              Quick Setup
+              <Link to="/quick-setup">Quick Setup</Link>
             </Heading>
             <Text>
               Get your live stream up and running in no time.
@@ -48,7 +49,7 @@ const Index = () => {
           <Box textAlign="center" maxW="sm" p={4}>
             <FaDollarSign size="3em" />
             <Heading as="h3" size="lg" mt={4} mb={2}>
-              Easy Monetization
+              <Link to="/easy-monetization">Easy Monetization</Link>
             </Heading>
             <Text>
               Charge your audience effortlessly when needed.
